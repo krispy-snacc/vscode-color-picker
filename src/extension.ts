@@ -59,7 +59,7 @@ class Matcher {
 	
 	
 	static getMatches(text: string): Match[] {
-		const matches = text.matchAll(/(#(?:[\da-f]{3,4}){2}|rgb\((?:\d{1,3},\s*){2}\d{1,3}\)|rgba\((?:\d{1,3},\s*){3}\d*\.?\d+\)|hsl\(\d{1,3}(?:,\s*\d{1,3}%){2}\)|hsla\(\d{1,3}(?:,\s*\d{1,3}%){2},\s*\d*\.?\d+\))/gi);
+		const matches = text.matchAll(/(#(?:[\da-f]{3,4}){2}|#(?:[\da-f]{1,2}){3}|rgb\((?:\d{1,3},\s*){2}\d{1,3}\)|rgba\((?:\d{1,3},\s*){3}\d*\.?\d+\)|hsl\(\d{1,3}(?:,\s*\d{1,3}%){2}\)|hsla\(\d{1,3}(?:,\s*\d{1,3}%){2},\s*\d*\.?\d+\))/gi);
 		return Array.from(matches).map(match => {
 			const t = match[0];
 			const length = t.length;
