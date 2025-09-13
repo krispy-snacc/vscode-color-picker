@@ -1,32 +1,31 @@
+This extension is now deprecated as the functionality is now already built into vscode
+
 # vscode-color-picker README
 
 A simple Color picker for vscode that lets you use vscode's css color picker in other documents
 
 ![color-picker-preview](https://i.imgur.com/dG1tnN3.png, "color-picker-preview")
 
-* To make it work for your preferred language, just add a `vscode-color-picker.languages` entry in settings.json, with VSCode's identifier string for the language, in the list. For ex.
-  ```json
-    "vscode-color-picker.languages": [
-        "python",
-        "javascript",
-        "typescript"
-    ],
-    ...
-  ```
- and then make sure to reload the window for the service to be intialized properly.
- 
-## Frequently Asked Questions
+-   To make it work for your preferred language, just add a `vscode-color-picker.languages` entry in settings.json, with VSCode's identifier string for the language, in the list. For ex.
+    ```json
+      "vscode-color-picker.languages": [
+          "python",
+          "javascript",
+          "typescript"
+      ],
+      ...
+    ```
+    and then make sure to reload the window for the service to be intialized properly.
 
+## Frequently Asked Questions
 
 ### How do i stop it from running in languages i don't want it in?
 
 Just remove the language entry from `vscode-color-picker.languages` in settings.json.
 
-
 ### What are the languages i can add to the extension?
 
 A list of VSCode's language identefiers is avaialable [here](https://code.visualstudio.com/docs/languages/identifiers).
-
 
 ### What types of strings are recognized colors?
 
@@ -48,5 +47,3 @@ Example of Hex format: `#00ffff`
 
 Format for Hexa: `#<hexa-code>`
 Example of Hexa format: `#00ffff77`
-
- 
